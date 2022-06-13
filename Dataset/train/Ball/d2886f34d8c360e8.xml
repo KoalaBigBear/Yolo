@@ -1,0 +1,26 @@
+<annotation>
+  <folder>Ball</folder>
+  <filename>d2886f34d8c360e8.jpg</filename>
+  <path>C:\Users\Dell\Desktop\Dataset\train\Ball\d2886f34d8c360e8.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>602</width>
+    <height>1024</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>Ball</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>408</xmin>
+      <ymin>138</ymin>
+      <xmax>494</xmax>
+      <ymax>225</ymax>
+    </bndbox>
+  </object>
+</annotation>

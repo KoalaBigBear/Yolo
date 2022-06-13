@@ -1,0 +1,26 @@
+<annotation>
+  <folder>Person</folder>
+  <filename>b0212c4a7c691a49.jpg</filename>
+  <path>C:\Users\Dell\Desktop\Dataset\train\Person\b0212c4a7c691a49.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>959</width>
+    <height>1024</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>Person</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>0</xmin>
+      <ymin>0</ymin>
+      <xmax>655</xmax>
+      <ymax>1023</ymax>
+    </bndbox>
+  </object>
+</annotation>

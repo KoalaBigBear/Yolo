@@ -1,0 +1,26 @@
+<annotation>
+  <folder>Footwear</folder>
+  <filename>7abcf3d888a8c64d.jpg</filename>
+  <path>C:\Users\Dell\Desktop\Dataset\train\Footwear\7abcf3d888a8c64d.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>1024</width>
+    <height>684</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>Footwear</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>545</xmin>
+      <ymin>532</ymin>
+      <xmax>616</xmax>
+      <ymax>623</ymax>
+    </bndbox>
+  </object>
+</annotation>
