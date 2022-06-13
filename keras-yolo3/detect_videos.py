@@ -279,13 +279,13 @@ if __name__ == '__main__':
     
     if "input" in FLAGS:
         dirPath = FLAGS.output +"/frame/"
-        # import shutil
-        # import os
-        # if os.path.exists(dirPath):
-         # shutil.rmtree(dirPath)
-        # else:
-          # print("The folder does not exists")
-        # detect_video(YOLO(), FLAGS.input, FLAGS.output)
+        import shutil
+        import os
+        if os.path.exists(dirPath):
+         shutil.rmtree(dirPath)
+        else:
+          print("The folder does not exists")
+        detect_video(YOLO(), FLAGS.input, FLAGS.output)
         # Create directory
         newpath = FLAGS.output+"/clip"
         if not os.path.exists(newpath):
