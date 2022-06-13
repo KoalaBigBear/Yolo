@@ -278,20 +278,24 @@ if __name__ == '__main__':
 
     
     if "input" in FLAGS:
+
+        from datetime import datetime
+        now = datetime.now()
+        dt_string = str(now.strftime("%d-%m-%Y-%H-%M-%S"))
         dirPath = FLAGS.output +"/frame/"
         import shutil
         import os
         if os.path.exists(dirPath):
-         shutil.rmtree(dirPath)
+          shutil.rmtree(dirPath)
         else:
           print("The folder does not exists")
         detect_video(YOLO(), FLAGS.input, FLAGS.output)
         # Create directory
+
         newpath = FLAGS.output+"/clip"
         if not os.path.exists(newpath):
             os.makedirs(newpath)
-
-        
+ 
         image_list = []
         dirPath = FLAGS.output +"/frame/"
         result = next(os.walk(dirPath))[2]
@@ -302,13 +306,13 @@ if __name__ == '__main__':
         image_list.sort()
         print(image_list)
         #-------Cell end-------------------------
-
+      
         #-------Cell st------------------------
         fps = 30.0
         width = 854
         height = 480
         fourcc = cv2.VideoWriter_fourcc(*"mp4v")
-        out = cv2.VideoWriter(FLAGS.output+"/clip/"+'basket_ball_final.mp4', fourcc, fps, (width, height))
+        out = cv2.VideoWriter(FLAGS.output+"/clip/"+dt_string+".mp4", fourcc, fps, (width, height))
 
         for image in image_list:
             frame = cv2.imread(image)
